@@ -1,52 +1,54 @@
-.js{
-  margin: 0 auto;
-}
-.width{
-  width: 1100px;
-}
-body{
-  background-color: #4e4e4e;
-  width: 100%;
-}
-header{
-  margin: 0 auto;
-}
-.js.in-top{
+.header{
   width: 100%;
   background-color: #FFF;
   display: table;
+  position: fixed;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  z-index: 1;
+}
+.inner{
+  width: 1100px;
+  margin: auto;
 }
 .fas.fa-bolt{
   font-size: 3em;
   float: left;
-  margin: 15px;
   width: 0;
 }
 .in-top.in__right{
   background-color: #74cfae;
   color: #FFF;
-  margin-top: 15px;
   float: right;
+  text-decoration: none;
+  right: 0;
   padding: 14px 12px;
+  transition: all 0.3s ease;
 }
-.js.in-title{
+.in-top.in__right:hover{
+  transition: all 0.3s ease;
+  color: #333;
+}
+.title{
   background-color: #f2f2f2;
-  text-align: center;
   display: table;
+  padding-bottom: 250px;
+  padding-top: 250px;
   width: 100%;
 }
 h1{
   color: #74cfae;
+  font-family: 'Raleway';
   font-size: 90px;
   font-weight: 700;
-  margin-top: 250px;
-  padding: 20px;
+  text-align: center;
 }
 h2{
   color: #c0c0c0;
   font-size: 30px;
-  margin: 250px;
-  margin-top: 0px;
+  font-family: 'Raleway';
+  text-align: center;
+  margin-top: 20px;
 }
 .inner.top{
   display: inline-block;
@@ -65,27 +67,33 @@ h2{
 }
 .iphone.text{
   display: table-cell;
-  float: right;
+  float: left;
+  padding-top: 80px;
+  padding-left: 100px;
   text-align: center;
-  width: 760px;
 }
 h3{
   font-size: 25px;
-  margin-top: 100px;
+  font-family: 'Raleway';
+  width: 650px;
 }
 .iphone.text__1{
-  word-break: break-word;
   font-size: 20px;
+  font-family: 'Lato';
+  line-height: 1.3em;
   padding-top: 35px;
+  word-break: break-word;
+  width: 650px;
 }
-.js.main__top{
+.main__top{
   background-color: #f2f2f2;
   display: table;
+  padding-top: 60px;
   width: 100%;
 }
 h4{
   font-size: 24px;
-  margin-top: 60px;
+  font-family: 'Raleway';
   text-align: center;
 }
 .main__picture-img{
@@ -99,8 +107,10 @@ h4{
 }
 .picture-img{
   float: left;
+  display: table;
   margin-left: 100px;
   opacity: 0.7;
+  transition: all 0.3s ease;
 }
 .picture-img:hover{
   opacity: 1.0;
@@ -109,88 +119,109 @@ h4{
 .picture-img:first-child{
   margin-left: 0;
 }
+.picture-img:nth-child(4n){
+  margin-left: 0;
+}
+.picture-img:nth-of-type(n+4){
+  margin-top: 80px;
+}
 .main__text-under{
-  margin: 70px;
-  margin-top: 90px;
+  padding: 90px;
+  padding-bottom: 70px;
   display: table;
+  margin: 0 auto;
 }
 .text__in-left{
   float: left;
+  font-family: 'Lato';
+  font-size: 19px;
+  line-height: 1.3em;
   text-align: center;
-  margin-left: 90px;
-  width: 530px;
+  width: 550px;
 }
 .text__in-right{
   background-color: #74cfae;
   color: #FFF;
   font-size: 12px;
-  float: right;
+  float: left;
+  font-family: 'Lato';
   margin-left: 90px;
-  padding: 14px 12px;
+  text-decoration: none;
   padding: 14px 20px;
+  transition: all 0.3s ease;
 }
-.main__under-img{
+.text__in-right:hover{
+  transition: all 0.3s ease;
+  color: #333;
+}
+.main__circle-img{
   background-color: #4e4e4e;
   display: table;
   width: 100%;
 }
 h5{
   color:#FFF;
+  font-size: 25px;
   margin-top: 70px;
   text-align: center;
+  font-family: 'Raleway';
 }
 .circle{  
   display: inline-flex;
   text-align: center;
   margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 .circle-img{
   color:#FFF;
   display: inline-block;
   font-size: 16px;
   margin-left: 180px;
-  margin: 100px;
-  margin-top: 50px;
   text-align: center;
   width: 185px;
+}
+.circle-text{
+  margin-top: 20px;
+  font-family: 'Lato';
 }
 div .circle-img:first-of-type{
   margin-left: 0;
 }
-.footer.top{
+.sns__content{
   background-color: #f2f2f2;
   display: table;
   width: 100%;
 }
-.footer.top-img{
-  
+.sns__content-img{ 
   text-align: center;
   font-size: 0px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
-.footer.img{
+.sns__content__img{
   background-color: #f2f2f2;
   display: inline-block;
   color: #74cfae;
   padding: 20px 0px;
   font-size: 60px;
-  margin: 200px;
-  margin-left: 0;
-  margin-right: 0;
+  transition: all 0.3s ease;
   width: 185px;
 }
-.footer.img:hover{
+.sns__content__img:hover{
   transition: all 0.3s ease;
   background-color: #fff;
 }
-.footer.text{
+.footer{
   color: #fff;
-  background-color: #74cfae;
   display: table;
+  background-color: #74cfae;
+  padding-top: 20px;
+  padding-bottom: 20px;
   width: 100%;
 }
-.footer.text__1{
+.footer__text{
   float: right;
-  margin: 20px;
-  margin-left: 0;
-  margin-right: 0;
+  font-size: 18px;
+  font-family: 'Lato';
 }
