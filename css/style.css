@@ -1,33 +1,49 @@
+.body{
+  font-family: 'Lato';
+}
+@media(max-width:-767px){
+  .inner{
+    width: 767px;
+    margin: 0 auto;
+  }
+}
 .header{
-  width: 100%;
   background-color: #FFF;
-  display: table;
   position: fixed;
   padding-top: 15px;
   padding-bottom: 15px;
+  width: 100%;
   z-index: 1;
 }
 .inner{
   width: 1100px;
-  margin: auto;
+  margin: 0 auto;
 }
-.fas.fa-bolt{
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.in-top{
+  color: #4e4e4e;
   font-size: 3em;
   float: left;
   width: 0;
 }
-.in-top.in__right{
+.in__right{
   background-color: #74cfae;
   color: #FFF;
   float: right;
   text-decoration: none;
-  right: 0;
   padding: 14px 12px;
   transition: all 0.3s ease;
 }
-.in-top.in__right:hover{
+.in__right:hover{
   transition: all 0.3s ease;
   color: #333;
+}
+.main{
+  padding-top: 78px;
 }
 .title{
   background-color: #f2f2f2;
@@ -43,7 +59,7 @@ h1{
   font-weight: 700;
   text-align: center;
 }
-h2{
+.title__text{
   color: #c0c0c0;
   font-size: 30px;
   font-family: 'Raleway';
@@ -54,52 +70,47 @@ h2{
   display: inline-block;
   margin: 20px;
 }
-.js.iphone{
+.iphone{
   color: #fff;
   background-color: #74cfae;
   display: table;
+  padding-top: 50px;
   width: 100%;
 }
-.iphone.img{
+.iphone__img{
   float: left;
-  margin-top: 50px;
   margin-left: 50px;
 }
-.iphone.text{
+.iphone__text{
   display: table-cell;
-  float: left;
-  padding-top: 80px;
   padding-left: 100px;
   text-align: center;
 }
-h3{
+.iphone__text-top{
   font-size: 25px;
   font-family: 'Raleway';
   width: 650px;
 }
 .iphone.text__1{
   font-size: 20px;
-  font-family: 'Lato';
   line-height: 1.3em;
   padding-top: 35px;
   word-break: break-word;
   width: 650px;
 }
-.main__top{
+.main__picture{
   background-color: #f2f2f2;
   display: table;
   padding-top: 60px;
+  padding-bottom: 70px;
   width: 100%;
 }
-h4{
+.main__picture-text{
   font-size: 24px;
   font-family: 'Raleway';
   text-align: center;
 }
 .main__picture-img{
-  display: table;
-}
-.main__picture-img.in-top{
   margin-top: 40px;
 }
 .main__picture-img.in-under{
@@ -126,16 +137,14 @@ h4{
   margin-top: 80px;
 }
 .main__text-under{
-  padding: 90px;
-  padding-bottom: 70px;
+  padding-top: 90px;
   display: table;
   margin: 0 auto;
 }
 .text__in-left{
   float: left;
-  font-family: 'Lato';
   font-size: 19px;
-  line-height: 1.3em;
+  line-height: 1.5em;
   text-align: center;
   width: 550px;
 }
@@ -144,7 +153,7 @@ h4{
   color: #FFF;
   font-size: 12px;
   float: left;
-  font-family: 'Lato';
+  font-family: 'Raleway';
   margin-left: 90px;
   text-decoration: none;
   padding: 14px 20px;
@@ -154,24 +163,22 @@ h4{
   transition: all 0.3s ease;
   color: #333;
 }
-.main__circle-img{
+.main__circle{
   background-color: #4e4e4e;
   display: table;
+  padding-top: 70px;
+  padding-bottom: 90px;
   width: 100%;
 }
-h5{
+.main__circle-text{
   color:#FFF;
   font-size: 25px;
-  margin-top: 70px;
   text-align: center;
   font-family: 'Raleway';
 }
-.circle{  
-  display: inline-flex;
-  text-align: center;
-  margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 100px;
+.main__circle-img{  
+  display: flex;
+  margin-top: 50px;
 }
 .circle-img{
   color:#FFF;
@@ -183,7 +190,6 @@ h5{
 }
 .circle-text{
   margin-top: 20px;
-  font-family: 'Lato';
 }
 div .circle-img:first-of-type{
   margin-left: 0;
@@ -191,13 +197,13 @@ div .circle-img:first-of-type{
 .sns__content{
   background-color: #f2f2f2;
   display: table;
-  width: 100%;
-}
-.sns__content-img{ 
-  text-align: center;
-  font-size: 0px;
   padding-top: 200px;
   padding-bottom: 200px;
+  width: 100%;
+}
+.sns__content-img{
+  text-align: center;
+  font-size: 0px;
 }
 .sns__content__img{
   background-color: #f2f2f2;
@@ -221,7 +227,6 @@ div .circle-img:first-of-type{
   width: 100%;
 }
 .footer__text{
-  float: right;
+  text-align: right;
   font-size: 18px;
-  font-family: 'Lato';
 }
